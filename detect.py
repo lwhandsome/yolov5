@@ -225,8 +225,8 @@ def parse_opt():
     parser.add_argument('--source', type=str, default=ROOT / 'test_multiple', help='file/dir/URL/glob/screen/0(webcam)')
     parser.add_argument('--data', type=str, default=ROOT / 'my_data/data.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
-    parser.add_argument('--conf-thres', type=float, default=0.15, help='confidence threshold')         #置信度
-    parser.add_argument('--iou-thres', type=float, default=0.47, help='NMS IoU threshold')
+    parser.add_argument('--conf-thres', type=float, default=0.10, help='confidence threshold')         #置信度
+    parser.add_argument('--iou-thres', type=float, default=0.10, help='NMS IoU threshold')
     parser.add_argument('--max-det', type=int, default=1000, help='maximum detections per image')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--view-img', action='store_true', help='show results')
