@@ -221,9 +221,9 @@ def parse_opt():
     #parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'yolov5s.pt', help='model path or triton URL')      #权重文件
     #parser.add_argument('--source', type=str, default=ROOT / 'data/images', help='file/dir/URL/glob/screen/0(webcam)')       #待检测目标
     #parser.add_argument('--data', type=str, default=ROOT / 'data/coco128.yaml', help='(optional) dataset.yaml path')         #数据
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/1/weights/best.pt', help='model path or triton URL')
-    parser.add_argument('--source', type=str, default=ROOT / 'my_data/test/images', help='file/dir/URL/glob/screen/0(webcam)')
-    parser.add_argument('--data', type=str, default=ROOT / 'my_data/data.yaml', help='(optional) dataset.yaml path')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/2/weights/best.pt', help='model path or triton URL')
+    parser.add_argument('--source', type=str, default=ROOT / 'output.avi', help='file/dir/URL/glob/screen/0(webcam)')
+    parser.add_argument('--data', type=str, default=ROOT / 'mydata3/data.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
     parser.add_argument('--conf-thres', type=float, default=0.10, help='confidence threshold')         #置信度
     parser.add_argument('--iou-thres', type=float, default=0.10, help='NMS IoU threshold')

@@ -41,7 +41,7 @@ class Cap:
         return img0
     
 if __name__ == '__main__':
-    cam = Cap(cam_id=1)  #摄像设备
+    cam = Cap(cam_id = 1)  #摄像设备
     cam.start()
     detector = Detector(classes=[0,1,2], conf_thres=0.6, view_img=True)
 
