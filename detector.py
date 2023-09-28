@@ -23,11 +23,11 @@ from utils.torch_utils import select_device, smart_inference_mode
 
 class Detector:
     def __init__(self,
-            weights=ROOT / 'runs/train/1/weights/best.pt',  # model path or triton URL
-            data=ROOT / 'my_data/data.yaml',  # dataset.yaml path
+            weights=ROOT / 'runs/train/SENet/weights/best.pt',  # model path or triton URL
+            data=ROOT / 'mydata/data.yaml',  # dataset.yaml path
             imgsz=(640, 640),  # inference size (height, width)
-            conf_thres=0.25,  # confidence threshold
-            iou_thres=0.45,  # NMS IOU threshold
+            conf_thres=0.10,  # confidence threshold
+            iou_thres=0.10,  # NMS IOU threshold
             max_det=1000,  # maximum detections per image
             device='',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
             view_img=False,  # show results

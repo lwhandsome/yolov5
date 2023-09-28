@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['biopolar', 'grasper', 'hook', 'irrigator', 'undefined tool']
+
+roboflow:
+  workspace: cse-309
+  project: surgical-instruments-detection
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cse-309/surgical-instruments-detection/dataset/1

@@ -1,0 +1,13 @@
+train: mydata_practice/train/images
+val: mydata_practice/valid/images
+test: mydata_practice/test/images
+
+nc: 4
+names: ['grasper', 'bipolar', 'hook', 'irrigator']
+
+roboflow:
+  workspace: cse-309
+  project: object-follow-with-rcm-constrain
+  version: 11
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cse-309/object-follow-with-rcm-constrain/dataset/11
